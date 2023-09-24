@@ -27,7 +27,7 @@
 				<br>
 
 <h2 id="abstract">Abstract</h2>
-<p> Speech conveys more information than just text, as the same word can be uttered in various voices to convey diverse information. Compared to traditional text-to-speech (TTS) methods relying on speech prompts (reference speech) for voice variability, using text prompts (descriptions) is more user-friendly since speech prompts can be hard to find or may not exist at all. TTS approaches based on the text prompt face two challenges: 1) the one-to-many problem, where not all details about voice variability can be described in the text prompt, and 2) the limited availability of text prompt datasets, where vendors and large cost of data labeling are required to write text prompt for speech. In this work, we introduce VoiceGen to address these challenges with a variation network to provide variability information of voice not captured by text prompts, and a prompt generation pipeline to utilize the large language models (LLM) to compose high quality text prompts. Specifically, the variation network predicts the representation extracted from the reference speech (which contains full information about voice) based on the text prompt representation. For the prompt generation pipeline, it generates text prompts for speech with a speech understanding model to recognize voice attributes (e.g., gender, speed) from speech and a large language model to formulate text prompt based on the recognition results. Experiments on a large-scale (44K hours) speech dataset demonstrate that compared to the previous works, VoiceGen generates voices more consistent with text prompts and supports the sampling of diverse voice variability, thereby offering users more choices on voice generation. Additionally, the prompt generation pipeline produces high-quality prompts, eliminating the large labeling cost. The demo page of VoiceGen is available online. </p>
+<p> Speech conveys more information than text, as the same word can be uttered in various voices to convey diverse information. Compared to traditional text-to-speech (TTS) methods relying on speech prompts (reference speech) for voice variability, using text prompts (descriptions) is more user-friendly since speech prompts can be hard to find or may not exist at all. TTS approaches based on the text prompt face two main challenges: 1) the one-to-many problem, where not all details about voice variability can be described in the text prompt, and 2) the limited availability of text prompt datasets, where vendors and large cost of data labeling are required to write text prompts for speech. In this work, we introduce VoiceGen to address these challenges with a variation network to provide variability information of voice not captured by text prompts, and a prompt generation pipeline to utilize the large language models (LLM) to compose high quality text prompts. Specifically, the variation network predicts the representation extracted from the reference speech (which contains full information about voice) based on the text prompt representation. For the prompt generation pipeline, it generates text prompts for speech with a speech understanding model to recognize voice attributes (e.g., gender, speed) from speech and a large language model to formulate text prompts based on the recognition results. Experiments on a large-scale (44K hours) speech dataset demonstrate that compared to the previous works, VoiceGen generates voices more consistent with text prompts and supports the sampling of diverse voice variability, thereby offering users more choices on voice generation. Additionally, the prompt generation pipeline produces high-quality prompts, eliminating the large labeling cost. The demo page of VoiceGen is available online. </p>
 
 
 <h2 id="content">Content</h2>
@@ -73,7 +73,7 @@
 -->
 
 <h2 id="audio samples">1. Audio Samples</h2>
-<p> The following parts are the audio samples from our system. We demonstrate from the following three aspects</p>
+<p> The following parts are the audio samples from VoiceGen. We demonstrate from the following three aspects</p>
 <p> <b>Attribute Control</b>: we aim to show that we can control a specific attribute with the text prompts of different meanings.</p>
 <p> <b>Timbre Variation</b>: we aim to show that we can synthesize speech in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone, while in the different timbre with different sampling results of variation network.</p>
 <p> <b>Extension on Face2Voice</b>: we aim to show that we can synthesize speech that matches the facial image.</p>
@@ -82,7 +82,7 @@
 -->
 
 <h3 id="Part 1">1.1 Attribute Control</h3>
-<p> Note that audio samples in this part are from our system, which show that our system can control a specific attribute with the text prompts of different meanings.</p>
+<p> Note that audio samples in this part are from VoiceGen, which show that VoiceGen can control a specific attribute with the text prompts of different meanings.</p>
 
 <h4 id="gender1">1.1.1 Gender</h4>
 <p>Gender-1: <em>Please ask a <b>man</b> with a normal voice to say: Fire a whole platoon, Major.</em></p>
@@ -166,7 +166,7 @@
 </table>
 
 <h3 id="Part 2">1.2 Timbre Variation</h3>
-<p> Note that audio samples in this part are from our system, which show that our system can synthesize speech in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone, while in the different timbre with different sampling results of variation network.</p>
+<p> Note that audio samples in this part are from VoiceGen, which show that VoiceGen can synthesize speech in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone, while in the different timbre with different sampling results of variation network.</p>
 <h5 id="vae1">1.2.1 Variation Network</h5>
 <p> We can change the timbre by altering the sampling results of the variation network while maintaining the speech consistent with the intention of the text prompt.</p>
 <p>Variation Network-[1, 2, 3]: <em>I want a <b>low pitched</b> <b>female</b> voice: Jason went back sadly and told the heroes what he had heard, and they leapt onshore and searched till gone. At dawn, they found the body all rolled in dust and blood among the corpses of those monstrous beasts.</em></p>
@@ -320,7 +320,7 @@
 -->
 
 <h3 id="Part 3">1.3 Extension on Face2Voice</h3>
-<p> Note that audio samples in this part are from our system (VoiceGen), SP-FaceVC, and ground-truth voice (Ground-Truth) which show that our system can synthesize speech that matches the facial image.</p>
+<p> Note that audio samples in this part are from VoiceGen, SP-FaceVC, and ground-truth voice (Ground-Truth) which show that VoiceGen can synthesize speech that matches the facial image.</p>
 
 <p>VoiceGen: <em>Face-1: That summer is immigration, however, being mainly from the free states, greatly changed the relative strength of the two parties.</em></p>
 <p>SP-FaceVC: <em>Face-1: That summer is immigration, however, being mainly from the free states, greatly changed the relative strength of the two parties.</em></p>
