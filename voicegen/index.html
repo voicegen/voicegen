@@ -73,7 +73,7 @@
 -->
 
 <h2 id="audio samples">1. Audio Samples</h2>
-<p> The following parts are the audio samples from VoiceGen. We demonstrate from the following three aspects</p>
+<p> We demonstrate the advantages of VoiceGen through the following three aspects: </p>
 <p> <b>Attribute Control</b>: we aim to show that we can control a specific attribute with the text prompts of different meanings.</p>
 <p> <b>Timbre Variation</b>: we aim to show that we can synthesize speech in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone, while in the different timbre with different sampling results of variation network.</p>
 <p> <b>Extension on Face2Voice</b>: we aim to show that we can synthesize speech that matches the facial image.</p>
@@ -82,7 +82,7 @@
 -->
 
 <h3 id="Part 1">1.1 Attribute Control</h3>
-<p> Note that audio samples in this part are from VoiceGen, which show that VoiceGen can control a specific attribute with the text prompts of different meanings.</p>
+<p> Note that audio samples in this part are from VoiceGen, PromptTTS, and InstructTTS, which show that VoiceGen can control a specific attribute with the text prompts of different meanings.</p>
 
 <h4 id="gender1">1.1.1 Gender</h4>
 <p>Gender-1: <em>Please ask a <b>man</b> with a normal voice to say: Fire a whole platoon, Major.</em></p>
@@ -90,14 +90,26 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: center">Model</th>
 <th style="text-align: center">Gender-1</th>
 <th style="text-align: center">Gender-2</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<th style="text-align: center">VoiceGen</th>
 <td style="text-align: center"><audio controls="controls" ><source src="../audio/audio1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 <td style="text-align: center"><audio controls="controls" ><source src="../audio/audio2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">PromptTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">InstructTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -109,6 +121,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: center">Model</th>
 <th style="text-align: center">Speed-1</th>
 <th style="text-align: center">Speed-2</th>
 <th style="text-align: center">Speed-3</th>
@@ -116,9 +129,22 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<th style="text-align: center">VoiceGen</th>
 <td style="text-align: center"><audio controls="controls" ><source src="../audio/audio7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio9.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">PromptTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio10.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio12.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">InstructTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio14.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -130,6 +156,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: center">Model</th>
 <th style="text-align: center">Pitch-1</th>
 <th style="text-align: center">Pitch-2</th>
 <th style="text-align: center">Pitch-3</th>
@@ -137,9 +164,22 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio12.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<th style="text-align: center">VoiceGen</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio18.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio17.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio16.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">PromptTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio20.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">InstructTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio23.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio24.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -151,6 +191,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: center">Model</th>
 <th style="text-align: center">Volume-1</th>
 <th style="text-align: center">Volume-2</th>
 <th style="text-align: center">Volume-3</th>
@@ -158,9 +199,22 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio20.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<th style="text-align: center">VoiceGen</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio28.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio29.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">PromptTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio26.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio25.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio30.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+<tr>
+<th style="text-align: center">InstructTTS</th>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio31.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio33.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -180,9 +234,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio31.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio38.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio39.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio42.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio49.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -202,9 +256,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio31.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio29.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio30.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio42.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio40.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio41.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -224,9 +278,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio24.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio25.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio35.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio36.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio38.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -244,9 +298,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio31.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio33.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio34.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio42.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio44.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio45.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -337,9 +391,9 @@
 <tbody>
 <tr>
 <td style="text-align: center"><img src='../figure/1.jpg'/></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio53.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio63.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio54.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio74.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio65.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -359,9 +413,9 @@
 <tbody>
 <tr>
 <td style="text-align: center"><img src='../figure/2.jpg'/></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio55.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio61.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio60.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio66.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio71.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -381,9 +435,9 @@
 <tbody>
 <tr>
 <td style="text-align: center"><img src='../figure/3.jpg'/></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio57.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio67.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio75.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio68.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -394,7 +448,7 @@
 <table style="width: 1250px; table-layout: fixed;">
 <thead>
 <tr>
-<th style="text-align: center"> Face-4</th>
+<th style="text-align: center">Face-4</th>
 <th style="text-align: center">VoiceGen</th>
 <th style="text-align: center">SP-FaceVC</th>
 <th style="text-align: center">Ground-Truth</th>
@@ -403,9 +457,9 @@
 <tbody>
 <tr>
 <td style="text-align: center"><img src='../figure/4.jpg'/></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio62.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio59.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio69.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio73.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/audio70.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
