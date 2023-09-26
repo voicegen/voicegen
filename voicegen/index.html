@@ -75,7 +75,7 @@
 <h2 id="audio samples">1. Audio Samples</h2>
 <p> We demonstrate the advantages of VoiceGen through the following three aspects: </p>
 <p> <b>Attribute Control</b>: we aim to show that we can control a specific attribute with the text prompts of different meanings.</p>
-<p> <b>Timbre Variation</b>: we aim to show that we can synthesize speech in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone, while in the different timbre with different sampling results of variation network.</p>
+<p> <b>Timbre Variation</b>: we aim to show that we can synthesize speech in the different timbre with different sampling results of variation network, while in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone.</p>
 <p> <b>Extension on Face2Voice</b>: we aim to show that we can synthesize speech that matches the facial image.</p>
 <!--
 <p> <b>Comparison of Residual Style Control</b>: we aim to show we can control a specific residual style with the prompts of different meaning.</p>
@@ -220,7 +220,7 @@
 </table>
 
 <h3 id="Part 2">1.2 Timbre Variation</h3>
-<p> Note that audio samples in this part are from VoiceGen, which show that VoiceGen can synthesize speech in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone, while in the different timbre with different sampling results of variation network.</p>
+<p> Note that audio samples in this part are from VoiceGen, which show that VoiceGen can synthesize speech in the different timbre with different sampling results of variation network, while in the same timbre when changing the text prompt with the same intention, text content or sampling results of TTS backbone.</p>
 <h5 id="vae1">1.2.1 Variation Network</h5>
 <p> We can change the timbre by altering the sampling results of the variation network while maintaining the speech consistent with the intention of the text prompt.</p>
 <p>Variation Network-[1, 2, 3]: <em>I want a <b>low pitched</b> <b>female</b> voice: Jason went back sadly and told the heroes what he had heard, and they leapt onshore and searched till gone. At dawn, they found the body all rolled in dust and blood among the corpses of those monstrous beasts.</em></p>
